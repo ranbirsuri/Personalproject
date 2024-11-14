@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Goal Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f3f4f6;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Header Styling */
+header {
+    background-color: #ff7043;  /* Vibrant orange */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+/* Form Container */
+.form-container {
+    width: 100%;
+    max-width: 550px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+    transform: translateY(-5px);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: #ff7043;  /* Vibrant orange */
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #ff7043;  /* Vibrant orange */
+    outline: none;
+    background-color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    background-color: #ff7043;  /* Vibrant orange */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e64a19;  /* Darker shade of orange */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .form-container {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+
+    .form-container h2 {
+        font-size: 1.5rem;
+    }
+}
+
+    </style>>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Fitness Goal Plan</h1>
+            <p>Transform your fitness journey with a custom workout plan tailored to your goals.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Enter Your Fitness Details</h2>
+            <form id="fitnessForm">
+                <div class="form-group">
+                    <label for="currentWeight">Current Weight (kg):</label>
+                    <input type="number" id="currentWeight" name="currentWeight" placeholder="Enter your weight" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="goal">Goal (Weight Loss, Muscle Gain, Maintenance):</label>
+                    <select id="goal" name="goal" required>
+                        <option value="weightLoss">Weight Loss</option>
+                        <option value="muscleGain">Muscle Gain</option>
+                        <option value="maintenance">Maintenance</option>
+                    </select>
+                </div>
+
+                <button type="submit">Get My Workout Plan</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fitness Goal Plan. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
